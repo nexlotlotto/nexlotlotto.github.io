@@ -8,13 +8,16 @@ body {
     background-color: #f0f0f0;
 }
 
+.lobby-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+}
+
 .lobby {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .lobby-item {
@@ -32,4 +35,28 @@ body {
 
 .lobby-item img:hover {
     transform: scale(1.05);
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-arrow {
+    font-size: 4em; /* Tamaño de las flechas */
+    cursor: pointer;
+    padding: 0 0px; /* Distancia de las flechas respecto al centro */
+    position: relative;
+}
+
+.nav-arrow.left {
+    left: -80px; /* Posición horizontal de la flecha izquierda */
+}
+
+.nav-arrow.right {
+    right: -80px; /* Posición horizontal de la flecha derecha */
 }
